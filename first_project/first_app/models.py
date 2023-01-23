@@ -1,3 +1,16 @@
 from django.db import models
 
 # Create your models here.
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+    birthday = models.DateField(default='1994-09-07')
+    email = models.EmailField(db_index=True)
+    created_at = models.DateTimeField()
+    updated_at = models.DateTimeField()
+
+class Sales(models.Model):
+    fee = models.IntegerField()
+    created_at = models.DateTimeField()
+    updated_at = models.DateTimeField()
