@@ -9,6 +9,9 @@ class Person(models.Model):
     email = models.EmailField(db_index=True)
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField()
+    time_on = models.DateTimeField(auto_now_add=True)
+    def _str_(self):
+        return self.first_name
 
 class Sales(models.Model):
     fee = models.IntegerField()

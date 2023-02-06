@@ -1,0 +1,1146 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet"  href="{% static 'test/render_person.css' %}" >
+</head>
+
+<!-- <table>
+  <tr>
+    <th>first_name</th>
+    <th>last_name</th>
+  </tr>
+  {% for person in persons   %}
+  <tr>
+    <td>{{person.first_name}}</td>
+    <td>{{person.last_name}}</td>
+  </tr>
+  {% endfor %}
+</table> -->
+
+<section class="sheet">
+    <div class="page-header">
+    <p>ホテル名</p>
+    <p class = "title">清掃指示書</p>
+    <p>フロア</p>
+    <p>日付</p>
+    </div>
+
+
+    <table >
+      <tr class="first_row">
+        <th width=100px>部屋番号</th>
+        <th width=100px>ステータス</th>
+        <th width=100px>清掃種別</th>
+        <th width=100px>チェックイン時間</th>
+        <th width=50px>Exb数</th>
+        <th width=450px >手配品</th>
+        <th width=50px>個数</th>
+        <th width=100px>団体</th>
+        <th width=150px>清掃者名</th>
+        <th width=100px>入室時間</th>
+        <th width=100px>退室時間</th>
+        <th width=500px >その他・備考</th>
+        <th width=100px>部屋番号</th>
+      </tr>
+      <tr>
+        <td class="room-number">101</td>
+        <td>OPN</td>
+        <td>Out</td>
+        <td>16:00</td>
+        <td>2</td>
+        <td>バスタオル<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー</td>
+        <td>2<br>1</td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="room-number">102</td>
+        <td>SN</td>
+        <td>Stay</td>
+        <td></td>
+        <td></td>
+        <td>バスタオル<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>      </tr>
+      <tr>
+        <td class="room-number">103</td>
+        <td>VU</td>
+        <td>-</td>
+        <td></td>
+        <td></td>
+        <td>バスタオル<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー<br>ブルーレイプレイヤー</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="room-number">104</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+            <tr>
+        <td class="room-number">105</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">106</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">107</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">108</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="room-number">109</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">110</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">111</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">112</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">113</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">114</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+<!--
+            <tr>
+        <td class="room-number">115</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">116</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">117</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">118</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">119</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">121</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">122</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr> -->
+    </table>
+    <p class="page-break" style="text-align:right"></p>
+    </section>
+
+
+      <section class="sheet">
+          <div class="page-header">
+    <p>ホテル名</p>
+    <p class = "title">清掃指示書</p>
+    <p>フロア</p>
+    <p>日付</p>
+    </div>
+
+
+        <table>
+      <tr class="first_row">
+        <th width=100px>部屋番号</th>
+        <th width=150px>ステータス</th>
+        <th width=150px>清掃種別</th>
+        <th width=100px>チェックイン時間</th>
+        <th width=50px>Exb数</th>
+        <th width=200px >手配品</th>
+        <th width=50px>個数</th>
+        <th width=100px>団体</th>
+        <th width=150px>清掃者名</th>
+        <th width=100px>入室時間</th>
+        <th width=100px>退室時間</th>
+        <th width=500px >その他・備考</th>
+        <th>部屋番号</th>
+      </tr>
+      <tr >
+        <td class="room-number">201</td>
+        <td>OPN</td>
+        <td>Out</td>
+        <td>16:00</td>
+        <td>2</td>
+        <td>バスタオル<br>ブルーレイプレイヤー</td>
+        <td>2<br>1</td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="room-number">202</td>
+        <td>SN</td>
+        <td>Stay</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>      </tr>
+      <tr>
+        <td class="room-number">203</td>
+        <td>VU</td>
+        <td>-</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="room-number">204</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+            <tr>
+        <td class="room-number">205</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">206</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">207</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">208</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="room-number">209</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">210</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">211</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">212</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">213</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">214</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">215</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">216</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">217</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">218</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">219</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">220</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">221</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">222</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+  </section>
+    <p class="page-break" style="text-align:right"></p>
+
+<section class="sheet">
+        <div class="page-header">
+    <p>ホテル名</p>
+    <p class = "title">清掃指示書</p>
+    <p>フロア</p>
+    <p>日付</p>
+    </div>
+
+            <table>
+      <tr class="first_row">
+        <th width=100px>部屋番号</th>
+        <th width=150px>ステータス</th>
+        <th width=150px>清掃種別</th>
+        <th width=100px>チェックイン時間</th>
+        <th width=50px>Exb数</th>
+        <th width=200px >手配品</th>
+        <th width=50px>個数</th>
+        <th width=100px>団体</th>
+        <th width=150px>清掃者名</th>
+        <th width=100px>入室時間</th>
+        <th width=100px>退室時間</th>
+        <th width=500px >その他・備考</th>
+        <th>部屋番号</th>
+      </tr>
+      <tr>
+        <td class="room-number">301</td>
+        <td>OPN</td>
+        <td>Out</td>
+        <td>16:00</td>
+        <td>2</td>
+        <td>バスタオル<br>ブルーレイプレイヤー</td>
+        <td>2<br>1</td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="room-number">302</td>
+        <td>SN</td>
+        <td>Stay</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>      </tr>
+      <tr>
+        <td class="room-number">303</td>
+        <td>VU</td>
+        <td>-</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="room-number">304</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+            <tr>
+        <td class="room-number">305</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">306</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">307</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">308</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="room-number">309</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">310</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">311</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">312</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">313</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">314</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">315</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">316</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">317</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">318</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">319</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">320</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">321</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+            <tr>
+        <td class="room-number">322</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="time">:</td>
+        <td class="time">:</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    </section>
+      <p class="page-break" style="text-align:right"></p>
+
+  </body>
